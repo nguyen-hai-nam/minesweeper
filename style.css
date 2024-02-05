@@ -1,0 +1,83 @@
+body {
+    background-color: antiquewhite;
+}
+
+div {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+.container {
+    width: 500px;
+    height: min-content;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.grid {
+    height: 100%;
+    width: 400px;
+    background-color: #dcd6bc;
+    border: 10px solid #dcd6bc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid .square {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    border: 5px solid;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #f5f3eb;
+}
+
+.grid .checked {
+    font-weight: 700;
+    border: 2px solid #b89900;
+}
+
+.one, .five {
+    color: #e76346;
+}
+
+.two, .six {
+    color: #4199d3;
+}
+
+.three, .seven {
+    color: #57da59;
+}
+
+.four, .eight {
+    color: #bb41d3;
+}
+
+.status {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+#result {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 0 0.5rem;
+    font-size: 24px;
+    background-color: #dbb700;
+    border: 1px solid black;
+    transform: translate(-50%, -300%);
+    font-weight: bold;
+    display: none;
+}
